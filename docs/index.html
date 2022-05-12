@@ -12,8 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro:ital,wght@0,400;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <!-- Google Icons Outlined -->
     <!-- <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/95aa681591.js" crossorigin="anonymous"></script>
+
 
     <title>Yu Nakasone</title>
 </head>
@@ -37,6 +36,23 @@
                 <div class="night-mode-container">
                     <img src="./assets/images/icons/night-mode-on.png" alt="">
                 </div>
+                <div class="menu" id="ham-menu">
+                    <div class="hamburger-btn-menu">
+                        <div class="ham-inner"></div>
+                    </div>
+                </div>
+                <aside class="aside-menu">
+                    <nav>
+                        <a href="#inormation-id">About me</a>
+                        <!-- <a href="#skills-id">Skills</a> -->
+                        <a href="#projects-id">Projects</a>
+                        <a href="#contact-form-id">Contact</a>
+                        <a target="_blank" href="https://github.com/Yuchan45">
+                            <img src="./assets/images/icons/github-blue.png" alt="">
+                            Source
+                        </a>
+                    </nav>
+                </aside>
             </div>
         </div>
     </nav>
@@ -77,7 +93,7 @@
                             doloribus sed magni ipsa?</p>
                     </div>
                     <div class="my-portfolio">
-                        <a href="#"><span>Portfolio</span></a>
+                        <a target="_blank" href="https://github.com/Yuchan45"><span>Portfolio</span></a>
                     </div>
                 </div> 
                 <div class="right-side reveal">
@@ -113,10 +129,10 @@
                 </div>
             </div>
         </section>
-        <section id="skills-id" class="skills reveal">
-            <!-- <div class="text-container">
+        <!-- <section id="skills-id" class="skills reveal">
+            <div class="text-container">
                 <span class="skills-span">SKILLS</span>
-            </div> -->
+            </div>
             <div class="grid-container">
                 <div class="logos-grid">
                     <div><img class="skills-img" src="./assets/images/skills/html-5.png" alt=""></div>
@@ -136,7 +152,7 @@
                     <div><img class="skills-img" src="./assets/images/skills/GitHub-white.png" alt=""></div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="projects-id" class="projects">
             <div class="projects-container">
@@ -285,13 +301,14 @@
                         </div>
 
 
-                        <div class="form__message" id="form__message">
-                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-                        </div>
-
+                        
                         <div class="form-group form__gorup-btn-submit">
                             <button type="submit" class="submit-btn">Enviar!</button>
                             <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                        </div>
+                        
+                        <div class="form__message" id="form__message">
+                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
                         </div>
                     </form>
                 </div>
@@ -312,6 +329,9 @@
     <script type="text/javascript" src="./assets/scripts.js"></script>
     <script type="text/javascript" src="./assets/scrollReveal.js"></script>
     <script type="text/javascript" src="./assets/form.js"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/95aa681591.js" crossorigin="anonymous"></script>
 
     <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

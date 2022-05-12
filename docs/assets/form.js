@@ -39,8 +39,8 @@ const formValidation = (e) => {
 
 const fieldValidation = (expresion, input, campo) => {
     if (expresion.test(input.value)) {
-        document.getElementById(`group__${campo}`).classList.remove('formulario__grupo-incorrecto');
         document.getElementById(`group__${campo}`).classList.add('formulario__grupo-correcto');
+        document.getElementById(`group__${campo}`).classList.remove('formulario__grupo-incorrecto');
         document.querySelector(`#i__${campo}`).classList.add('fa-circle-check');
         document.querySelector(`#i__${campo}`).classList.remove('fa-circle-xmark');
         document.querySelector(`#group__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
@@ -51,7 +51,7 @@ const fieldValidation = (expresion, input, campo) => {
         document.querySelector(`#i__${campo}`).classList.add('fa-circle-xmark');
         document.querySelector(`#i__${campo}`).classList.remove('fa-circle-check');
         document.querySelector(`#group__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
-
+        fields[campo] = false;
         setTimeout(() => {
             if (input.value == '') {
                 document.getElementById(`group__${campo}`).classList.remove('formulario__grupo-incorrecto');
@@ -64,6 +64,7 @@ const fieldValidation = (expresion, input, campo) => {
 const textAreaValidation = () => {
     if (text.value == '') {
         document.getElementById('txtarea-p').classList.add('form__message-active');
+        fields['message'] = false;
     } else {
         document.getElementById('txtarea-p').classList.remove('form__message-active');
         fields['message'] = true;
@@ -96,5 +97,8 @@ form.addEventListener('submit', (e) => {
 		});
 	} else {
 		document.getElementById('form__message').classList.add('form__message-active');
+        setTimeout(() => {
+            document.getElementById('form__message').classList.remove('form__message-active');
+		}, 2000);
 	}
 });
