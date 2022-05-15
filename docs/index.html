@@ -17,20 +17,22 @@
     <title>Yu Nakasone</title>
 </head>
 <body>
-    <nav class="navigation-bar">
+    <header class="navigation-bar"> <!--ESTO DEBERIA SER LA ETIQUETA 'header'. -->
         <div class="nav-bar-container">
             <div class="left-section">
                 <a href="#home">Yu Nakasone</a>
             </div>
             <div class="center-section">
-                <a href="#inormation-id">About me</a>
-                <!-- <a href="#skills-id">Skills</a> -->
-                <a href="#projects-id">Projects</a>
-                <a href="#contact-form-id">Contact</a>
-                <a target="_blank" href="https://github.com/Yuchan45">
-                    <img src="./assets/images/icons/github-blue.png" alt="">
-                    Source
-                </a>
+                <nav>
+                    <a href="#inormation-id">Sobre mi</a>
+                    <!-- <a href="#skills-id">Skills</a> -->
+                    <a href="#projects-id">Proyectos</a>
+                    <a href="#contact-form-id">Contacto</a>
+                    <a target="_blank" href="https://github.com/Yuchan45">
+                        <img src="./assets/images/icons/github-blue.png" alt="">
+                        Source
+                    </a>
+                </nav>
             </div>
             <div class="right-section">
                 <div class="night-mode-container">
@@ -43,10 +45,10 @@
                 </div>
                 <aside class="aside-menu">
                     <nav>
-                        <a href="#inormation-id">About me</a>
+                        <a href="#inormation-id">Sobre mi</a>
                         <!-- <a href="#skills-id">Skills</a> -->
-                        <a href="#projects-id">Projects</a>
-                        <a href="#contact-form-id">Contact</a>
+                        <a href="#projects-id">Proyectos</a>
+                        <a href="#contact-form-id">Contacto</a>
                         <a target="_blank" href="https://github.com/Yuchan45">
                             <img src="./assets/images/icons/github-blue.png" alt="">
                             Source
@@ -55,7 +57,7 @@
                 </aside>
             </div>
         </div>
-    </nav>
+    </header>
     <banner id="home">
         <div class="particles-container">
             <div id="particles-js"></div>
@@ -86,11 +88,11 @@
                     </div>
                     <div class="work">
                         <h3 class="article-title">Work</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse temporibus iste molestias incidunt dolor, quae rerum modi 
+                        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse temporibus iste molestias incidunt dolor, quae rerum modi 
                             provident neque, maiores illo laborum nobis velit ducimus minima commodi tenetur id corporis quibusdam sit ex repellendus 
                             aut voluptatum? Velit quam numquam voluptates sunt, distinctio explicabo sit id nobis! Vel commodi architecto illo 
                             in veniam quasi laudantium molestias exercitationem consectetur ab accusamus nesciunt nostrum officiis, illum corporis, molestiae 
-                            doloribus sed magni ipsa?</p>
+                            doloribus sed magni ipsa?</article>
                     </div>
                     <div class="my-portfolio">
                         <a target="_blank" href="https://github.com/Yuchan45"><span>Portfolio</span></a>
@@ -123,7 +125,7 @@
                         </div>
                     </div>
                     <div class="hobbies">
-                        <h3 class="article-title">I <span>❤</span></h3>
+                        <h3 class="article-title">I <span><i class="fa-solid fa-heart"></i></span></h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ullam molestiae sint non vero veritatis exercitationem optio porro voluptas et!</p>
                     </div>
                 </div>
