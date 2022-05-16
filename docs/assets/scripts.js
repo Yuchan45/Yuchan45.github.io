@@ -51,11 +51,24 @@ function blurBackground(flag){
     if (flag == true) {
         title.style.filter = blur;
         main.style.filter = blur;
+        disableOverflow(true);
     } else {
         title.style.filter = unblur;
         main.style.filter = unblur;
+        disableOverflow(false);
     }
 }
+
+function disableOverflow(flag) {
+    // Recibe como parametro un booleano. Si es true, deshabilita el scroll. Si es false, lo habilita.
+    let body = document.querySelector('body');
+    if (flag == true){
+        body.style.overflowY = 'hidden';
+    } else {
+        body.style.overflowY = 'auto';
+    }
+}
+
 
 
 menuBtn.addEventListener('click', function() {

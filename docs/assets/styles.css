@@ -1535,10 +1535,10 @@ a .pr-image:hover::after {
 
 @media only screen and (min-width: 769px) and (max-width: 1024px)  {
     .right-section .night-mode-container {
-        display: flex;
+        display: none;
     }
     .right-section .menu {
-        display: none;
+        display: flex;
     }
     .nav-bar-container {
         width: 100%;
