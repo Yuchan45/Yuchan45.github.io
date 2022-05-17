@@ -95,6 +95,7 @@ form.addEventListener('submit', (e) => {
 		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
 			icono.classList.remove('formulario__grupo-correcto');
 		});
+		alert("El envio de emails se encuentra deshabilitado!");
 	} else {
 		document.getElementById('form__message').classList.add('form__message-active');
         setTimeout(() => {

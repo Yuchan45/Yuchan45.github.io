@@ -776,7 +776,7 @@ html {
 }
 
 .project-image > a .pr-image {
-    background-image: url(./images/projects/aventura-pokemon.png);
+    background-image: url(../images/projects/aventura-pokemon.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -814,7 +814,7 @@ a .pr-image:hover::after {
 }
 
 .image-one {
-    background-image: url(./images/projects/analizador-de-codigo-python.png) !important;
+    background-image: url(../images/projects/analizador-de-codigo-python.png) !important;
 }
 
 .inverted-tech-list {
