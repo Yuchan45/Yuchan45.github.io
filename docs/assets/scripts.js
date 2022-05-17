@@ -95,3 +95,11 @@ labels.forEach(function (label) {
         blurBackground(false);
     });
 });
+
+
+
+// Alert, still in development.
+let dayNightBtn = document.querySelector('.night-mode-container');
+dayNightBtn.addEventListener('click', () => {
+    alert("Funcionalidad de modo dia y noche aún en desarrollo!");
+});
