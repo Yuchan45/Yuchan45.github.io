@@ -1,6 +1,6 @@
 # Proyecto Portfolio
 
-##TP0 Desarrollo Web - HTML, CSS y Javascript
+TP0 Desarrollo Web - HTML, CSS y Javascript
 
 Programa Codo A Codo 4.0: Desarrollo Web FullStack - Python
 

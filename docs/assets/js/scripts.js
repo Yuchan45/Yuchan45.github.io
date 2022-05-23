@@ -18,6 +18,7 @@ $(document).ready(function(){
     
 });
 
+
 // Social media interactions
 document.getElementById("social-git").onclick = function () {
     window.open("https://www.github.com", "_blank");
@@ -31,6 +32,7 @@ document.getElementById("social-li").onclick = function () {
 document.getElementById("social-fb").onclick = function () {
     window.open("https://www.facebook.com", "_blank");
 };
+
 
 
 // Hamburger Menu interactions
